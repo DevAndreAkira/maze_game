@@ -1,6 +1,6 @@
 import { maze, mazeHeight, mazeWidth } from "./maze.js";
 
-export const proporcao = { value: 50 };
+export const proporcao = { value: window.innerWidth < 547 ? 30 : 50 };
 
 export let app = new PIXI.Application({
     backgroundColor: 0xf2c3b2,

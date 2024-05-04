@@ -17,6 +17,8 @@ export function MovingArrowOld({ container, arrayParedes }) {
     protagonista.y = (proporcao.value + proporcao.value / 2);
     container.addChild(protagonista);
 
+    console.log(protagonista.width);
+
     document.addEventListener('keydown', function (e) {
         if (!protagonista.transform) {
             return;

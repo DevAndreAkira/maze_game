@@ -1,8 +1,8 @@
 import { MovingArrowOld } from "./MovingArrow.js";
 import { app, proporcao } from "./main.js";
 
-export const mazeWidth = { value: 21 };
-export const mazeHeight = { value: 11 };
+export const mazeWidth = { value: window.innerWidth < 991 ? 11 : 21 };
+export const mazeHeight = { value: window.innerWidth < 991 ? 13 : 11 };
 
 export let keyObj = {};
 export let doorObj = {};
