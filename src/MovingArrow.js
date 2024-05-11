@@ -49,7 +49,7 @@ export function MovingArrowOld({ container, arrayParedes }) {
                 keySprite.destroy(true);
                 chave = true;
                 console.log(doorSprite.texture);
-                const novaTextura = PIXI.Texture.from('../assets/images/door-op.png');
+                const novaTextura = PIXI.Texture.from('./assets/images/door-op.png');
                 doorSprite.texture.baseTexture = novaTextura;
                 console.log(doorSprite.texture);
             }
