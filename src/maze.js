@@ -70,8 +70,8 @@ export function maze() {
     function drawMaze(maze) {
         for (let y = 0; y < maze.length; y++) {
             for (let x = 0; x < maze[y].length; x++) {
-                const wallSprite = PIXI.Sprite.from('../assets/images/block.png');
-                const pathSprite = PIXI.Sprite.from('../assets/images/grass.jpg');
+                const wallSprite = PIXI.Sprite.from('./assets/images/block.png');
+                const pathSprite = PIXI.Sprite.from('./assets/images/grass.jpg');
 
                 wallSprite.width = tileSize;
                 wallSprite.height = tileSize;
@@ -92,12 +92,12 @@ export function maze() {
             }
         }
 
-        let doorTexture = PIXI.Texture.from('../assets/images/door.png');
+        let doorTexture = PIXI.Texture.from('./assets/images/door.png');
 
         placeKeyAndDoor(maze); // Adiciona a chave e a porta depois do caminho ser gerado
         for (let y = 0; y < maze.length; y++) {
             for (let x = 0; x < maze[y].length; x++) {
-                keySprite = PIXI.Sprite.from('../assets/images/key.png');
+                keySprite = PIXI.Sprite.from('./assets/images/key.png');
                 doorSprite = PIXI.Sprite.from(doorTexture);
 
                 keySprite.width = tileSize;
